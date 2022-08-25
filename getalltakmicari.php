@@ -16,6 +16,7 @@ $sql_result = $database->connection->query($sql);
             <th>Zanr</th>
             <th>Godine</th>
             <th>Drzava</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@ $sql_result = $database->connection->query($sql);
                 <td><?php echo $takmicar['zanr'] ?></td>
                 <td><?php echo $takmicar['godine'] ?></td>
                 <td><?php echo $takmicar['drzava'] ?></td>
+                <td><button class="btn btn-danger" id="delete-btn" value="<?php echo $takmicar['id'] ?>">Obrisi</button></td>
             </tr>
         <?php } ?>
 

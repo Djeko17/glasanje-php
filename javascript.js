@@ -2,6 +2,7 @@ $(function () {
     getAll();
     glasanje();
     getAllTakmicari();
+    deleteTakmicar();
 });
 
 function getAll() {
@@ -59,5 +60,28 @@ function getAllTakmicari() {
 
         }
     )
+
+}
+
+
+
+function deleteTakmicar() {
+
+    $(document).on('click', '#delete-btn', function () {
+
+        $.ajax(
+            {
+                url: 'deletetakmicar.php',
+                method: 'post',
+                data: { takmicarID: $(this).val() },
+
+                success: function () {
+                    {
+                        window.location = "takmicari.php";
+                    }
+                }
+            }
+        )
+    })
 
 }
