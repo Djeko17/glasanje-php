@@ -11,7 +11,19 @@
 </head>
 
 <body>
-    <h1 class="text-center" id="nsc-home">National Song Contest</h1>
+
+    <div class="container">
+
+        <h1 class="text-center" id="nsc-home">National Song Contest</h1>
+
+        <div class="takmicari">
+
+
+        </div>
+
+
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript.js"></script>
