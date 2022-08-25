@@ -24,6 +24,8 @@ function glasanje() {
 
     $(document).on('click', '#glasanje', function () {
 
+        var ime = $(this).attr('ime');
+
         $.ajax(
             {
                 url: 'glasanje.php',
@@ -32,6 +34,7 @@ function glasanje() {
 
                 success: function () {
                     {
+                        window.location = "thank-you.php?ime=" + ime;
                     }
                 }
             }
