@@ -1,5 +1,6 @@
 $(function () {
     getAll();
+    glasanje();
 });
 
 function getAll() {
@@ -16,5 +17,25 @@ function getAll() {
 
         }
     )
+
+}
+
+function glasanje() {
+
+    $(document).on('click', '#glasanje', function () {
+
+        $.ajax(
+            {
+                url: 'glasanje.php',
+                method: 'post',
+                data: { takmicarID: $(this).val() },
+
+                success: function () {
+                    {
+                    }
+                }
+            }
+        )
+    })
 
 }
