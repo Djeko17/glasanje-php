@@ -1,6 +1,7 @@
 $(function () {
     getAll();
     glasanje();
+    getAllTakmicari();
 });
 
 function getAll() {
@@ -40,5 +41,23 @@ function glasanje() {
             }
         )
     })
+
+}
+
+
+function getAllTakmicari() {
+
+    $.ajax(
+        {
+            url: 'getallTakmicari.php',
+
+            success: function (data) {
+                {
+                    $('.takmicari-div').html(data);
+                }
+            }
+
+        }
+    )
 
 }
