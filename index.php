@@ -21,6 +21,8 @@
             <button class="btn btn-primary" id="p-btn">Pretraga</button>
         </div>
 
+        <button class="btn btn-primary" id="s-btn" value="asc">Sortiraj</button>
+
 
         <div class="takmicari">
 

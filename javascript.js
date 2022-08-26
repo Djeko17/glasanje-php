@@ -4,6 +4,7 @@ $(function () {
     getAllTakmicari();
     deleteTakmicar();
     pretraga();
+    sortiranje();
 });
 
 function getAll() {
@@ -106,6 +107,37 @@ function pretraga() {
                 }
             }
         )
+    })
+
+}
+
+function sortiranje() {
+
+    $(document).on('click', '#s-btn', function () {
+
+        var sortiranje = $(this).val();
+
+        $.ajax(
+            {
+                url: 'sortiranje.php',
+                method: 'post',
+                data: { sortiranje: sortiranje },
+
+                success: function (data) {
+                    {
+                        $('.takmicari').html(data);
+
+
+                    }
+                }
+            }
+        )
+
+        if (sortiranje == 'asc')
+            $('#s-btn').attr('value', 'desc');
+        else
+            $('#s-btn').attr('value', 'asc');
+
     })
 
 }
