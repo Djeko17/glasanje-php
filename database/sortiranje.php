@@ -1,6 +1,6 @@
 <?php
 
-include('oop/Database.php');
+include('../oop/Database.php');
 
 $database = new Database('glasanje');
 

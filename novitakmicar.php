@@ -16,7 +16,7 @@
 
         <h1 class="text-center" id="nsc-home">National Song Contest</h1>
 
-        <form method="post" action="dodajtakmicara.php" id="forma-novi" class="text-center">
+        <form method="post" action="database/dodajtakmicara.php" id="forma-novi" class="text-center">
             <div class="mb-3">
                 <label class="form-label">Ime</label>
                 <input type="text" class="form-control" name="ime">

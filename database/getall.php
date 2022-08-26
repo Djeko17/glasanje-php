@@ -1,12 +1,10 @@
 <?php
 
-include('oop/Database.php');
+include('../oop/Database.php');
 
 $database = new Database('glasanje');
 
-$pretraga = $_POST['pretraga'];
-
-$sql = "SELECT * FROM takmicar WHERE ime LIKE '%$pretraga%' OR prezime LIKE '%$pretraga%' OR pesma LIKE '%$pretraga%'";
+$sql = "SELECT * FROM takmicar";
 $sql_result = $database->connection->query($sql);
 
 while ($takmicar = mysqli_fetch_assoc($sql_result)) {

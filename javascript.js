@@ -11,7 +11,7 @@ function getAll() {
 
     $.ajax(
         {
-            url: 'getall.php',
+            url: 'database/getall.php',
 
             success: function (data) {
                 {
@@ -32,7 +32,7 @@ function glasanje() {
 
         $.ajax(
             {
-                url: 'glasanje.php',
+                url: 'database/glasanje.php',
                 method: 'post',
                 data: { takmicarID: $(this).val() },
 
@@ -52,7 +52,7 @@ function getAllTakmicari() {
 
     $.ajax(
         {
-            url: 'getallTakmicari.php',
+            url: 'database/getallTakmicari.php',
 
             success: function (data) {
                 {
@@ -73,7 +73,7 @@ function deleteTakmicar() {
 
         $.ajax(
             {
-                url: 'deletetakmicar.php',
+                url: 'database/deletetakmicar.php',
                 method: 'post',
                 data: { takmicarID: $(this).val() },
 
@@ -96,7 +96,7 @@ function pretraga() {
 
         $.ajax(
             {
-                url: 'pretraga.php',
+                url: 'database/pretraga.php',
                 method: 'post',
                 data: { pretraga: $('#pretraga').val() },
 
@@ -119,7 +119,7 @@ function sortiranje() {
 
         $.ajax(
             {
-                url: 'sortiranje.php',
+                url: 'database/sortiranje.php',
                 method: 'post',
                 data: { sortiranje: sortiranje },
 

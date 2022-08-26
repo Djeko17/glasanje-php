@@ -1,6 +1,6 @@
 <?php
 
-include('oop/Database.php');
+include('../oop/Database.php');
 
 $ime = $_POST['ime'];
 $prezime = $_POST['prezime'];
@@ -18,4 +18,4 @@ $last_id = $database->connection->insert_id;
 $sql2 = "INSERT INTO glasovi VALUES (NULL, '$last_id', '0')";
 $database->connection->query($sql2);
 
-header('Location: takmicari.php');
+header('Location: ../index.php');

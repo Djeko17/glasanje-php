@@ -1,7 +1,7 @@
 <?php
 
-include('oop/Database.php');
-include('oop/Glas.php');
+include('../oop/Database.php');
+include('../oop/Glas.php');
 
 $database = new Database('glasanje');
 $sql_glasovi_takmicar = "SELECT * FROM glasovi WHERE takmicar_id=" . $_POST['takmicarID'];
