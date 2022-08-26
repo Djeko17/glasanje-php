@@ -16,6 +16,8 @@
 
         <h1 class="text-center" id="nsc-home">National Song Contest</h1>
 
+        <a href="novitakmicar.php"><button class="btn btn-danger" id="novi-button">Novi takmicar</button></a>
+
         <div class="takmicari-div">
 
 
