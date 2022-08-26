@@ -16,6 +16,12 @@
 
         <h1 class="text-center" id="nsc-home">National Song Contest</h1>
 
+        <div class="search">
+            <input type="text" class="form-control" id="pretraga">
+            <button class="btn btn-primary" id="p-btn">Pretraga</button>
+        </div>
+
+
         <div class="takmicari">
 
 

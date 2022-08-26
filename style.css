@@ -17,7 +17,7 @@
     grid-row-gap: 100px;
     grid-column-gap: 100px;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #novi-button{
@@ -36,4 +36,18 @@
 
 #dodajt-button{
     font-size: 22px;
+}
+
+.search {
+    display: flex;
+}
+
+#pretraga {
+    width: 300px;
+    margin-left: 450px;
+    margin-right: 20px;
+}
+
+#p-btn {
+    font-size: 20px;
 }

@@ -3,6 +3,7 @@ $(function () {
     glasanje();
     getAllTakmicari();
     deleteTakmicar();
+    pretraga();
 });
 
 function getAll() {
@@ -78,6 +79,29 @@ function deleteTakmicar() {
                 success: function () {
                     {
                         window.location = "takmicari.php";
+                    }
+                }
+            }
+        )
+    })
+
+}
+
+
+
+function pretraga() {
+
+    $(document).on('click', '#p-btn', function () {
+
+        $.ajax(
+            {
+                url: 'pretraga.php',
+                method: 'post',
+                data: { pretraga: $('#pretraga').val() },
+
+                success: function (data) {
+                    {
+                        $('.takmicari').html(data);
                     }
                 }
             }
